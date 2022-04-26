@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 02
+      author: Nargiz
+      changes:
+        - addColumn:
+            tableName: students
+            columns:
+              - column:
+                  name: test
+                  type: bigint
+

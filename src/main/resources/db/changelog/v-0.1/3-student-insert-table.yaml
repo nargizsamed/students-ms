@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 05
+      author: Nargiz
+      changes:
+        - insert:
+            tableName: students
+            columns:
+              - column:
+                  name: name
+                  value: 'Nargiz'
+              - column:
+                  name: age
+                  value: '24'
+              - column:
+                  name: home_address
+                  value: 'Plotnikov'
+
+
+
+
+

@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01
+      author: Nargiz
+      changes:
+        - createTable:
+            tableName: students
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: students_id
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: int
+              - column:
+                  name: home_address
+                  type: VARCHAR(255)
+              - column:
+                  name: school
+                  type: VARCHAR(200)
+              - column:
+                  name: description
+                  type: VARCHAR(30)
+              - column:
+                  name: grade
+                  type: bigint
+
